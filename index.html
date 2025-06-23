@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos</title>
+
+    <!-- Mi css -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <h2 class="header_title">Los elementos</h2>
+    </header>
+
+    <main class="main_container">
+    
+        <!-- Container vs -->
+        <div class="vs_container">
+
+            <div class="player">
+                <img id="player1" src="./imag/persona.svg" alt="">
+                <p>Player 1</p>
+                <p id="ptos_player1">0</p>
+            </div>
+
+            <div class="vs">
+                <h3 id="result">VS</h3>
+            </div>
+
+            <div class="player">
+                <img id="player2" src="./imag/cpu.svg" alt="">
+                <p>Player 2</p>
+                <p id="ptos_player2">0</p>
+            </div>
+
+        </div>
+        
+        <!-- Game -->
+        <div class="game_container">
+
+            <div class="game_options">
+                    <button id="piedra" class="option_piedra">
+                        <img src="./imag/fuego.jpg" alt="">
+                    </button>
+                    <button id="papel" class="option_papel">
+                        <img src="./imag/arbol.jpg" alt="">
+                    </button>
+                    <button id="tijera" class="option_tijera">
+                        <img src="./imag/agua.png" alt="">
+                    </button>         
+            </div>
+
+            <div class="details">
+                <p>fuego ganará contra arbol y perderá contra agua</p>
+                <p>arbol ganará contra agua y perderá contra fuego</p>
+                <p>agua ganará contra fuego y perderá contra arbol</p>
+            </div>
+
+        </div>
+
+        <!-- Start Game -->
+        <div class="start_game">
+            <button id="start_game">
+                <img src="./imag/play.svg" alt="">
+            </button>
+            <button id="reset">
+                <img src="./imag/reset.svg" alt="">
+            </button>
+        </div>
+
+    </main>
+    
+    <!-- Llamado a mi js -->
+    <script src="app.js"></script>
+</body>
+</html>
